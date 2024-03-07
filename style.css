@@ -1,0 +1,391 @@
+main{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --contador:rgb(226, 193, 92);
+  --rosaViejo:rgb(219, 160, 164);
+  --fuente:'DM Serif Display', serif;
+}
+
+.first{
+  height: 100vh;
+  background-image: url(assets/Inicio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second{
+  height: 100vh;
+  background-image: url(assets/first\ frase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenedor {
+  color: var(--contador);
+  text-align: center;
+}
+
+.cartel {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 4rem;
+  height: 6rem;
+  padding: 1.5rem 0px 5px 0px;
+  text-align: center;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 5px;
+}
+.cartel>div{
+  font-size: 3.8rem;
+  font-family: var(--fuente);
+  animation: fade 3s;
+  line-height: 5px;
+  margin-top: 7px;
+}
+.cartel>div>h3 {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.h3 {
+  bottom: 0;
+  margin: 0 auto ;
+}
+.contenedor {
+  margin-top: 3%;
+}
+.contenido {
+  width: 80%;
+  margin: 0 auto;
+  border: 0px solid var(--contador);
+  z-index: 10;
+}
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+.numeros {
+  font-family: var(--fuente);
+  font-size: 20px;
+  transition: .3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+.responsivo1 {
+  display: inline-block
+}
+.responsivo2 {
+  display: inline-block
+}
+
+.title{
+  text-align: center;
+}
+.nombre{
+  color: var(--contador);
+  margin-top: 0;
+  font-family: var(--fuente);
+  font-style: italic;
+  font-size: 50px;
+}
+
+.misXv{
+  color: var(--contador);
+  margin-bottom: 0;
+  font-family: var(--fuente);
+  font-style: italic;
+  font-size: 25px;
+}
+
+.frase{
+  color: var(--rosaViejo);
+  margin: 0 1px 1px 0;
+  border: 1px;
+  font-family: var(--fuente);
+  font-size: 16px;
+}
+
+.frase>p{
+  margin: 1px;
+}
+
+.cardIU {
+  width: 17rem;
+  height: 27rem;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgb(226, 193, 92, 0.5) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.dimCard{
+  background-color: var(--rosaViejo);
+  height: 33rem;
+}
+.card-body>h5{
+  font-family: var(--fuente);
+  text-align: center;
+}
+.card-body>p{
+  margin:1px;
+  font-family: var(--fuente);
+}
+
+.card-img>img{
+  width: 16rem;
+  border-radius: 1rem;
+}
+
+.whereTitle{
+  font-family: var(--fuente);
+}
+
+.whereTitle>h1{
+  font-size: 2.5rem;
+}
+
+.sectionFavorites{
+  height: 70vh;
+}
+
+.thumbnail{
+  display: block;
+  margin: 0px;
+  height: auto;
+  border-radius: 4px;
+  transition: all;
+}
+
+.img-circle{
+  width: 90%;
+  border: 5px solid var(--contador);
+  box-shadow: 5px 5px 5px 5px rgb(219, 160, 164,0.4);
+  border-radius: 50%;
+}
+
+.subtitle{
+  color: rgb(128, 128, 128);
+}
+
+button {
+  background: var(--rosaViejo);
+  color: rgb(216, 186, 98);
+  font-family: inherit;
+  padding: 0.2em 1em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid rgb(226, 193, 92, 0.4);
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.sectionAsistencia{
+  background-color: var(--rosaViejo);
+  border-top: 1px solid white;
+}
+.asistenciaTitle{
+  font-family: var(--fuente);
+  font-size: 45px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.finalImg{
+  height: 100vh;
+  background-image: url(assets/final.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.finalImg>div{
+  font-family: var(--fuente);
+  color:var(--contador);
+}
+
+.buttonWhatsapp{
+  position: relative;
+  padding: 6px 22px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: var(--contador);
+  background-color:white;
+  transition: all 0.2s ease;
+}
+
+.buttonWhatsapp:active {
+  transform: scale(0.96);
+}
+
+/* .buttonWhatsapp:before,
+.buttonWhatsapp:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+} */
+
+.buttonWhatsapp:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--contador) 20%, transparent 30%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle,var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%,var(--contador) 15%, transparent 20%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+.reproductor{
+  position: fixed;
+  right: 0;
+  top: 30%;
+}
+
+.imgItinerario{
+  width: 20rem;
+  box-shadow: 2px 2px 2px 2px rgba(226, 193, 92,0.4);
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.buttonWhatsapp:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle,var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%,var(--contador) 15%, transparent 20%),
+    radial-gradient(circle,var(--contador) 20%, transparent 20%),
+    radial-gradient(circle,var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%),
+    radial-gradient(circle, var(--contador) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@media (max-width: 390px) {  
+  
+  .contenedor {
+    margin-top: 15%;
+  }
+  .banner {
+   margin-bottom: 3px; 
+  }
+  .cartel {
+    height: 5rem;
+    width: 4rem;
+  }
+  .cartel>div{
+    font-size: 3rem;
+  }
+  .cartel>div>h3 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contenedor {
+    margin-top: 15%;
+  }
+  .banner {
+   margin-bottom: 3px; 
+  }
+  .cartel {
+    height: 5rem;
+    width: 3.5rem;
+  }
+  .cartel>div{
+    font-size: 3rem;
+  }
+  .cartel>div>h3 {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-height: 667px) {
+  .title{
+    top: 10rem;
+  }
+  .contenedor {
+    margin-top: 15%;
+    top: 30rem;
+  }
+  .banner {
+   margin-bottom: 3px; 
+  }
+  .cartel {
+    height: 5rem;
+    width: 4rem;
+  }
+  .cartel>div{
+    font-size: 3rem;
+  }
+  .cartel>div>h3 {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}

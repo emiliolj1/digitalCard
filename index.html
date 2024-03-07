@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/a.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Mis XV - Anto</title>
+</head>
+<body>
+  <main>
+    <!-- Seccion contador -->
+    <section class="container m-0 p-0">
+      <div class="first d-flex flex-column">
+        <div class="mt-auto"></div>
+        <div class="title">
+          <h2 class="misXv mb-1">- MIS XV -</h2>
+          <h1 class="nombre mb-0">Antonella</h1>
+        </div>
+        <div class="contenedor py-3 mt-0"> 
+          <div class="contenido">
+            <div class="contador">
+              <div class="responsivo1">
+                <div class="cartel">
+                <div id="dias"></div>
+                <div class="h3"><h3>Días</h3></div>
+              </div>
+                <div class="cartel">
+                <div id="horas"></div>
+                <div class="h3"><h3>Horas</h3></div>
+              </div>
+              </div>
+              <div class="responsivo2">
+              <div class="cartel">
+                <div id="minutos"></div>
+                <div class="h3"><h3>Minutos</h3></div>
+              </div>
+              <div class="cartel">
+                <div id="segundos"></div>
+                <div class="h3"><h3>Segundos</h3></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="reproductor"> 
+            <button class="buttonWhatsapp p-2 m-1" id="vidbutton"><i id="" class="bi bi-volume-up-fill fs-"></i></button> 
+            <audio id="myvid" src="./assets/audio/y2meta.com - Avicii - The Nights (Lyrics) (320 kbps).mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Seccion primera frase-->
+    <section class="container m-0 p-0">
+      <div class="container m-0 p-0 second d-flex">
+        <div class="frase text-center mt-auto mb-4">
+          <p>La luna se vestirá de gala para esa noche...</p>
+          <p>Noche anhelada durante años llenos de alegría, y las personas que quiero la vestirán de felicidad para festejar el comienzo de una etapa de mi vida.</p>
+          <p>PORQUE COMPARTIMOS MOMENTOS INOLVIDABLES ME GUSTARÍA QUE ESTÉS JUNTO A MI...</p></div>
+      </div>
+    </section>
+    <!--Seccion Donde-->
+    <section class="container m-0 p-0">
+      <div class="d-flex flex-column dimCard align-items-center">
+        <div class="py-2 whereTitle">
+          <h1>Donde</h1>
+        </div>
+        <div>
+          <div class="cardIU">
+            <div class="card-img p-2"><img src="./assets/salon.jpg" alt="Salon las Cañitas"></div>
+            <div class="card-body px-2">
+              <h5><strong>Las Cañitas Eventos</strong></h5>
+              <p class="text-center">Autopista Juan Domingo Perón km5, Camino al Aeropuerto.</p>
+              <p class="text-center fs-5 fw-bold">16 ‧ Diciembre ‧ 2023</p>
+              <p class="text-center fw-bold fs-5">21:30 hrs.</p>
+              <p class="text-center"><strong>Se ruega puntualidad!</strong></p>
+            </div>
+            <div class="d-flex justify-content-center p-2">
+              <a href="https://www.google.com/maps/place/26%C2%B049'21.4%22S+65%C2%B007'25.3%22W/@-26.8226,-65.1237,17z/data=!4m4!3m3!8m2!3d-26.8226!4d-65.1237"><button class="buttonWhatsapp">Ver mapa!</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- itinerario y Dresscode-->
+    <section class="container m-0 p-0">
+      <div class="d-flex flex-column align-content-center">
+        <div class="text-center whereTitle fs-1 my-3">Itinerario</div>
+        <div class="container text-center">
+          <img class="imgItinerario" src="./assets/itinerario.png" alt="Itinerario">
+        </div>
+        <div class="text-center whereTitle fs-1 my-3">Dresscode</div>
+        <div class="container text-center">
+          <img class="imgItinerario" src="./assets/2.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Carrousel Imagenes-->
+    <section class="container m-0 p-0">
+      <div class="text-center whereTitle fs-1 py-2">
+        Mis fotos!
+      </div>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/anto-44.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/anto-37.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/anto-29.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/anto-104.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item"> 
+            <img src="./assets/anto-34.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--Personas Favoritas-->
+    <section class="container m-0 p-0">
+      <div class="d-flex flex-column justify-content-center">
+        <div class="whereTitle text-center fs-1 py-2 fw-bold">
+          Mis personas Favoritas!
+        </div>
+        <div class="whereTitle text-center pb-2 subtitle">
+          ¡Gracias por hacer esto posible!
+        </div>
+        <div class="thumbnail text-center">
+          <img src="./assets/fathers.jpg" alt="" class="img-circle bd-placeholder-img rounded-circle">
+        </div>
+        <div class="whereTitle text-center pt-3 fs-3">
+          -Mis Papás-
+        </div>
+        <div class="whereTitle text-center pb-2 subtitle">
+          Verónica y Germán
+        </div>
+      </div>
+    </section>
+    <!-- Asistencia -->
+    <section class="container m-0 p-0 sectionAsistencia">
+      <div class="d-flex flex-column">
+        <div class="asistenciaTitle pt-2 pb-0">
+          Confirmar
+        </div>
+        <div class="asistenciaTitle pb-2 pt-0">
+          Asistencia
+        </div>
+        <div class="whereTitle fs-4 text-center">Espero puedas venir a compartir conmigo este día inolvidable</div>
+        <div class="d-flex justify-content-center p-4">
+          <a href="https://docs.google.com/forms/d/11x6bepgz_Q9h1tQiDWxWO3Db4E5RZHgZkLQBm9Smo4U/edit"><button type="button" class=" buttonWhatsapp fs-4">¡Confirma tu asistencia!</button></a>
+        </div>
+        <div class="whereTitle fs-4 pb-3 text-center">Espero no faltes!</div>
+      </div>
+    </section>
+     <!-- Contacto -->
+    <section class="container m-0 p-0 sectionAsistencia">
+      <div class="asistenciaTitle p-2">
+        Contacto
+      </div>
+      <div class="whereTitle fs-6 text-center pb-3">
+        Podes confirmar asistencia via Whatsapp
+      </div>
+      <div class="d-flex justify-content-center pb-4">
+        <a href="https://api.whatsapp.com/send?phone=5493816903193"><button class="buttonWhatsapp fs-5"><i class="bi bi-whatsapp"></i> Antonella</button></a>
+      </div>
+    </section>
+    <!-- endOff -->
+    <section class="container m-0 p-0">
+      <div class=" finalImg d-flex flex-column align-items-center text-center">
+        <div class="mb-auto">
+          <div class="fs-4 pt-5 mt-5">Por que los momentos</div>
+        <div class="fs-4">mas importantes</div>
+        <div class="fs-4">merecen ser compartidos...</div>
+        </div>
+        <div class="py-4 fs-1">Antonella</div>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
